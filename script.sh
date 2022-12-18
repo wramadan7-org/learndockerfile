@@ -25,3 +25,9 @@ docker container start command
 
 ## Logs container
 docker container logs command
+
+## Label Instruction
+docker build -t wramadan7/label label
+
+## Inspect label image
+docker image inspect wramadan7/label

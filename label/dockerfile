@@ -1,0 +1,11 @@
+FROM alpine:3
+
+## Label is metadata/information, it's pyur only information abour web,application,etc
+LABEL author="Wahyu Ramadan"
+LABEL company="WT. Jaya Production" website="https://localhost:8080/"
+
+RUN mkdir hello
+## Show hello world and create Hello world inside file world.txt
+RUN echo "Hello world" > "hello/world.txt"
+
+CMD cat "hello/world.txt"
