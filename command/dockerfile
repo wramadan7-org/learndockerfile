@@ -1,0 +1,7 @@
+FROM alpine:3
+
+RUN mkdir hello
+## Show hello world and create Hello world inside file world.txt
+RUN echo "Hello world" > "hello/world.txt"
+
+CMD cat "hello/world.txt"
