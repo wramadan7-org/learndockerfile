@@ -31,3 +31,10 @@ docker build -t wramadan7/label label
 
 ## Inspect label image
 docker image inspect wramadan7/label
+
+## Add instruction
+docker build -t wramadan7/add add
+
+docker container create --name add wramadan7/add
+docker container start add
+docker container logs add
