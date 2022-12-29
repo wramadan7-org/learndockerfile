@@ -38,3 +38,10 @@ docker build -t wramadan7/add add
 docker container create --name add wramadan7/add
 docker container start add
 docker container logs add
+
+## Copy instruction
+docker build -t wramadan7/copy copy
+
+docker container create --name copy wramadan7/copy
+docker container start copy
+docker container logs copy
